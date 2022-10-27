@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
 app.get('/courses',(req,res)=>{
     res.send(course)
 })
-
+  
 app.get('/courses/:id',(req,res)=>{
     const id = req.params.id
     const one = course.find(n=>n.id === id)
